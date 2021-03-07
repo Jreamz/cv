@@ -1,0 +1,138 @@
+body {
+    background-color: #f2f4f7;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14;
+}
+
+a {
+    color: #f2f4f7;
+    text-decoration: none;
+}
+
+
+.profile-pic {
+    float: left;
+    margin-right: 50px;
+    margin-left: 25px;
+    margin-bottom: 42px;
+    margin-top: 25px;
+    width: 15%;
+}
+
+h1 {
+    color: #3f72af;
+    margin: 5px;
+}
+
+h2 {
+    clear: left;
+}
+
+h3 {
+    clear: left;
+    color: #3f72af;
+    font-family: 'Quicksand', sans-serif;
+}
+
+h5 {
+   font-color: #3f72af;
+   font-family: 'Montserrat', sans-serif;
+}
+
+hr {
+    border-color: #e43a19;
+    border-style: dotted none none;
+    border-width: 7px;
+    margin-top: 50px;
+    width: 5%;
+    opacity: .33;
+}
+
+.header {
+    padding: 50px;
+}
+
+ul {
+  list-style: none; /* Remove default bullets */
+}
+
+ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #111f4d; /* Change the color */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-400%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(400%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.copyright {
+    font-size: 14px;
+}
+
+.btn {
+  -webkit-border-radius: 24;
+  -moz-border-radius: 24;
+  border-radius: 24px;
+  color: #f2f4f7;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  background: #3f72af;
+  padding: 14px 20px 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 30px;
+  opacity: .65;
+}
+
+.btn:hover {
+  background: #e43a19;
+  text-decoration: none;
+}
+
+.footer-container {
+    text-align: center;
+    text-decoration: none;
+}
+
+
+hr {
+  /* This section calls the slideInFromLeft animation we defined above */
+  animation: 2s ease-out 0s 1 slideInFromLeft;
+}
+
+h1 {
+  animation: 2s ease-out 0s 1 slideInFromRight;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+	}
+
+	70% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(0.95);
+	}
+}
+
+
